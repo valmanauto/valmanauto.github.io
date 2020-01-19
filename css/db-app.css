@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
 body,
 h1,
 h2,
@@ -5,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body,
@@ -27,7 +32,7 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../images/parallax1.jpg');
+    background-image: url('../images/portada_center1.jpg');
     min-height: 100%;
 }
 
@@ -59,5 +64,80 @@ html {
     .bgimg-3 {
         background-attachment: scroll;
         min-height: 400px;
+    }
+}
+
+
+
+/*******************************************************/
+
+.ta-color-primary{
+    color: #e66a16;
+}
+
+.ta-border-b-primary{
+    border-bottom: 1px solid #e66a16;
+}
+
+.ta-margin-0{
+    margin: 0;
+}
+
+.ta-button:hover{
+    color: #e66a16 !important;
+}
+
+.ta-deep-orange, .ta-hover-deep-orange:hover {
+    color: #000!important;
+    background-color: #e66a16!important;
+}
+
+.ta-padding-t-64{
+    padding-top:64px;
+}
+
+.ta-padding-b-64{
+    padding-bottom:64px;
+}
+
+.ta-padding-t-32{
+    padding-top:32px;
+}
+
+.ta-padding-b-32{
+    padding-bottom:32px;
+}
+
+.ta-padding-t-16{
+    padding-top:16px;
+}
+
+.ta-padding-b-16{
+    padding-bottom:16px;
+}
+
+@media (max-width: 600px){
+    .ta-display-middle-full {
+        left:0;
+        right: 0;
+        transform: translate(0%,-50%);
+    }
+}
+
+@media (max-width: 993px) and (min-width: 601px) {
+    .ta-offset-m3{
+        margin-left: 24.99999%;
+    }
+    .ta-offset-m4{
+        margin-left: 33.33333%;
+    }
+}
+
+@media (min-width: 993px) {
+    .ta-offset-l3{
+        margin-left: 24.99999%;
+    }
+    .ta-offset-l4{
+        margin-left: 33.33333%;
     }
 }
