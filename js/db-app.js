@@ -13,11 +13,14 @@ window.onscroll = function () {
 
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
+    var taBtnToUp = document.getElementById("ta-btnToUp");
     w3_close();
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        taBtnToUp.style.display = "block";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        taBtnToUp.style.display = "none";
     }
 }
 
@@ -36,14 +39,14 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 
-function pm_map(){
-    var contentPopup = '<div><div class="w3-center"><img src="../images/logo.png" alt="Prueba"></img></div><div><p><b>Perla Mayorga Boxing Club</b></p><p>28813, Pozuelo del Rey</p><p>40.367091, -3.316149</p></div></div>'
+function ta_map(){
+    var contentPopup = '<div><div class="w3-center"><img src="../images/logo.png" alt="Valman Auto Garage"></img></div><div><p><b>Valman Auto Garage</b></p><p>28510, Campo Real</p><p>40.3322489, -3.3682497</p></div></div>'
 		
     var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
-    var map = L.map('mapid').setView([40.367091, -3.316149], 17).addLayer(osm);
-    L.marker([40.367091, -3.316149])
+    var map = L.map('mapid').setView([40.3322489, -3.3682497], 17).addLayer(osm);
+    L.marker([40.3322489, -3.3682497])
         .addTo(map)
         .bindPopup(contentPopup)
         .openPopup();
@@ -78,7 +81,7 @@ $(document).ready(function() {
    
 $(window).on('load', function() {
     // executes when complete page is fully loaded, including all frames, objects and images
-    //this.pm_map();
+    this.ta_map();
     if($(window).width() > 580){
         ta_setHeight('.ta-titulo-ventajas');
         ta_setHeight('.ta-ventajas');

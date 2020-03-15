@@ -10,9 +10,9 @@
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
     
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-    crossorigin=""/>   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
     <link rel="stylesheet" type="text/css" href="./css/db-app.css">
 
     <body>
@@ -23,7 +23,7 @@
                 <div class="w3-container w3-black">
                     <div class="w3-row">
                         <div class="w3-col w3-container m8 l4">
-                            <p class="w3-small w3-center ta-margin-0">C/Hierro-Pol. Ind. Borondo-28510 Campo Real</p>
+                            <p class="w3-small w3-center ta-margin-0">C/Hierro 29-Pol. Ind. Borondo-28510 Campo Real</p>
                         </div>
                         <div class="w3-col w3-container w3-hide-small w3-hide-medium l4">
                             <p class="w3-small w3-center ta-margin-0"><i class="far fa-clock"></i> Ln-Vn: 9AM-20PM, Sa: 9AM-14PM
@@ -60,8 +60,19 @@
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
             <div class="w3-display-middle ta-display-middle-full" style="white-space:nowrap;">    
-                <div class="w3-center w3-padding-large ta-deep-orange w3-xlarge w3-wide w3-animate-opacity">
-                    <div class="w3-text-dark w3-xlarge">
+                <div class="w3-center w3-padding-large ta-deep-orange w3-wide w3-animate-opacity">
+                    <div class="w3-large w3-hide-medium w3-hide-large">
+                        <p style="margin: 2px;" class="w3-tiny w3-text-white">
+                            Valman Auto Garage
+                        </p>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square w3-hover-opacity"></i></a> 
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
+                        <a href="https://www.youtube.com/channel/" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=34691488817"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
+                    </div> 
+
+                    <div class="w3-xlarge w3-hide-small">
                         <p style="margin: 2px;">
                             <span class="w3-medium w3-text-white"><i>Valman Auto Garage</i></span>
                         </p>
@@ -88,8 +99,17 @@
                     Todo ese arduo trabajo y dedicación finalmente valió la pena, ya que el número de nuestros clientes nuevos y antiguos ha crecido de manera exponencial.</p>
             </div>
         </div>
-        <div class="ta-padding-t-16 ta-padding-b-64 w3-light-grey">
-            <h3 class="w3-center">NUESTROS VALORES</h3>
+
+        <!-- Second Parallax Image -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">VALORES</span>
+            </div>
+        </div>
+
+
+        <div class="ta-padding-t-64 ta-padding-b-64 w3-light-grey">
+            <h3 class="w3-center ta-color-7"><strong>NUESTROS VALORES</strong></h3>
             <div class="w3-row-padding w3-content">
                 <div class="w3-third w3-center w3-section">
                     <div class="w3-card-4 w3-container w3-white">
@@ -100,7 +120,8 @@
                             <h5>PIEZAS DE COCHE DE CALIDAD</h5>
                         </div>                            
                         <footer>
-                            <p class="ta-ventajas">Todas las piezas y detalles del automóvil que tenemos en stock fueron comprados a los distribuidores y fabricantes más confiables.</p>
+                            <p class="ta-ventajas">Todas las piezas y detalles del automóvil que tenemos en stock fueron comprados a los distribuidores 
+                                y fabricantes más confiables.</p>
                         </footer>
                     </div>                       
                 </div>
@@ -113,7 +134,8 @@
                             <h5>SERVICIO ORIENTADO AL CLIENTE</h5>
                         </div>                            
                         <footer>
-                            <p class="ta-ventajas">Valoramos el servicio que brindamos. A nuestros clientes que regresan siempre pueden esperar algo de nuestra parte, como un servicio futuro, descuento o un regalo.</p>
+                            <p class="ta-ventajas">Valoramos el servicio que brindamos. A nuestros clientes que regresan siempre pueden esperar algo de nuestra parte, 
+                                como descuento o un regalo.</p>
                         </footer>
                     </div>                       
                 </div>
@@ -126,13 +148,145 @@
                             <h5>PRECIOS ASEQUIBLES</h5>
                         </div>                            
                         <footer>
-                            <p class="ta-ventajas">Nuestro objetivo es hacer que nuestro servicio tenga el precio más razonable posible. Es por eso que reducimos todos los gastos comerciales no esenciales.</p>
+                            <p class="ta-ventajas">Nuestro objetivo es hacer que nuestro servicio tenga el precio más razonable posible. 
+                                Es por eso que reducimos todos los gastos comerciales no esenciales.</p>
                         </footer>
                     </div>                       
                 </div>
             </div>
         </div>
 
+        <div class="w3-cell-row w3-content">
+            <div class="w3-cell w3-mobile" style="width:50%">
+                <img src="./images/discount.jpeg" class="w3-round w3-image"
+                        alt="Discounts">
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle w3-mobile ta-mobile" style="width:50%">               
+                <h2 class="w3-center"><strong>DESCUENTOS EN LOS SIGUIENTES SERVICIOS:</strong></h2>     
+                <ul class="w3-ul w3-center w3-large w3-white">
+                    <li>FRENOS Y REPARACIÓN DE FRENOS</li>
+                    <li>CAMBIO DE ACEITE</li>
+                    <li>NEUMÁTICOS Y RUEDAS</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Third Parallax Image -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">SERVICIOS</span>
+            </div>
+        </div>
+
+        <div class="w3-container ta-padding-t-64 ta-padding-b-16 w3-light-grey" id="services">
+            <h2 class="w3-center ta-color-7"><strong>SERVICIOS DE REPARACIÓN</strong></h2>
+            <div class="w3-row-padding w3-content">
+                
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">CAMBIO DE <br> ACEITE</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/aceite.jpg" class="w3-round w3-image" alt="Cambio aceite">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">ESCAPE Y <br> SILENCIADORES</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/escape.jpg" class="w3-round w3-image" alt="Escape y silenciadores">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col l3 w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">NEUMÁTICOS Y <br> RUEDAS</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/neumaticos.jpg" class="w3-round w3-image" alt="Neumaticos y ruedas">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col l3 w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">REPARACIÓN DE <br> FRENOS</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/reparacion.jpg" class="w3-round w3-image" alt="Reparación de frenos">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col l3 w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">AIRE <br> ACONDICIONADO</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/reparacion.jpg" class="w3-round w3-image" alt="Aire acondicionado">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col l3 w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">DIRECCIÓN Y <br> SUSPENSIÓN</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/neumaticos.jpg" class="w3-round w3-image" alt="Dirección y suspensión">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">BATERíAS</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/escape.jpg" class="w3-round w3-image" alt="Baterías">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">SERVICIOS DE <br> MOTOR</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/aceite.jpg" class="w3-round w3-image" alt="Servicios de motor">
+                        </footer>
+                    </div>                       
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">14+</span><br>
+                Socios
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">55+</span><br>
+                Reparaciones realizadas
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">89+</span><br>
+                Clientes satisfechos
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">150+</span><br>
+                Reuniones
+            </div>
+        </div>
+
+
+<!--
         <div>
             <div class="w3-row">
                 <div class="w3-col m6 w3-center w3-padding-large">
@@ -141,7 +295,6 @@
                         alt="Photo of Me" width="500" height="333">
                 </div>
 
-                <!-- Hide this text on small devices -->
                 <div class="w3-col m6 w3-hide-small w3-padding-large">
                     <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -168,39 +321,17 @@
             </div>
         </div>
 
-        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-            <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">14+</span><br>
-                Partners
-            </div>
-            <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">55+</span><br>
-                Projects Done
-            </div>
-            <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">89+</span><br>
-                Happy Clients
-            </div>
-            <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">150+</span><br>
-                Meetings
-            </div>
-        </div>
-
-        <!-- Second Parallax Image with Portfolio Text -->
         <div class="bgimg-2 w3-display-container w3-opacity-min">
             <div class="w3-display-middle">
                 <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
             </div>
         </div>
 
-        <!-- Container (Portfolio Section) -->
         <div class="w3-content w3-container w3-padding-64" id="portfolio">
             <h3 class="w3-center">MY WORK</h3>
             <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make
                     them bigger</em></p><br>
 
-            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
             <div class="w3-row-padding w3-center">
                 <div class="w3-col m3">
                     <img src="./images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
@@ -247,7 +378,6 @@
             </div>
         </div>
 
-        <!-- Modal for full size images on click-->
         <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
             <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
                     class="fa fa-remove"></i></span>
@@ -256,67 +386,69 @@
                 <p id="caption" class="w3-opacity w3-large"></p>
             </div>
         </div>
+-->
 
         <!-- Third Parallax Image with Portfolio Text -->
-        <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="bgimg-4 w3-display-container w3-opacity-min">
             <div class="w3-display-middle">
-                <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+                <span class="w3-xxlarge w3-text-white w3-wide">CONTACTO</span>
             </div>
         </div>
 
         <!-- Container (Contact Section) -->
         <div class="w3-content w3-container w3-padding-64" id="contact">
-            <h3 class="w3-center">WHERE I WORK</h3>
-            <p class="w3-center"><em>I'd love your feedback!</em></p>
+            <h2 class="w3-center"><strong>CONTACTO</strong></h2>
+            <p class="w3-center w3-large">¡No dudes!, ponte en contacto con nosotros</p>
 
-            <div class="w3-row w3-padding-32 w3-section">
-                <div class="w3-col m4 w3-container">
-                    <img src="./images/map.jpg" class="w3-image w3-round" style="width:100%">
-                </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large w3-margin-bottom">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
-                        151515<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                        mail@mail.com<br>
-                    </div>
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                    <form action="/action_page.php" target="_blank">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </form>
-                </div>
+            <div style="margin-top:48px">
+                <p><i class="fa fa-map-marker fa-fw w3-large w3-margin-right"></i> <b> Valman Auto Garage</b></p>
+                <p style="margin-left: 64px;">C/Hierro 29 - Pol. Ind. Borondo</p>
+                <p style="margin-left: 64px;">28510, Campo Real</p>
+                <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> Telefóno : +34 555 559 658</p>
+                <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"></i> Email: <a href="mailto:loremipsum@gmail.com">loremipsum@gmail.com</a></p>
+                <br>
+                <!-- Image of location/map -->
+                <div id="mapid" class="w3-image" style="width:100%;margin-top:48px;height: 100vh;"></div>
             </div>
         </div>
 
+        <div id="ta-btnToUp" title="Go to top">
+            <a href="#home" class="w3-button w3-blue-grey w3-opacity-min"><i class="fa fa-arrow-up"></i></a>
+        </div>
+
         <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-            <div class="w3-xlarge w3-section">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <footer class="w3-container w3-dark-grey w3-padding-64 w3-center">
+            <div class="w3-content">
+                <div class="w3-section">
+                    <p><span class="w3-border-bottom">Redes Sociales</span></p>
+                    <p class="w3-large">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square w3-btn"></i></a> 
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram w3-btn"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter w3-btn"></i></a>
+                        <a href="https://www.youtube.com/channel/" target="_blank"><i class="fab fa-youtube w3-btn"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=34691488817"><i class="fab fa-whatsapp w3-btn"></i></a>
+                    </p>
+                    <p class="w3-small">C/Hierro 29 - Pol. Ind. Borondo - 28510, Campo Real</p>
+                    <p class="w3-small"><i class="fas fa-phone-alt"></i> +34 555 559 658</p>
+                    <p class="w3-small"><i class="far fa-clock"></i> Ln-Vn: 9AM-20PM, Sa: 9AM-14PM</p>
+                </div>
             </div>
         </footer>
 
+        <div id="popupCook">
+            <div id="closePopupCook" class="w3-right"><i class="far fa-window-close"></i></div>
+            <div class="w3-col s12 w3-center">
+                Este sitio web utliza cookies.<a href="./privacy-terms-and-conditions.html" target="_blank"> Más información.</a>
+            </div>
+            <div class="w3-col s12 w3-center"><a class="popupCookOK">Aceptar</a></div>           
+        </div>
+
         <script src="https://kit.fontawesome.com/359d13261e.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" 
-                integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
         <script type="text/javascript" src="./js/db-app.js"></script> 
     </body>
 
