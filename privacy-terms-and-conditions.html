@@ -12,13 +12,53 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
             integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         
-        <link rel="stylesheet" type="text/css" href="./css/app.css">        
+        <link rel="stylesheet" type="text/css" href="./css/db-app.css">        
     </head>
    
     <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <div class="w3-container w3-black">
+                    <div class="w3-row">
+                        <div class="w3-col w3-container m8 l4">
+                            <p class="w3-small w3-center ta-margin-0">C/Hierro 29-Pol. Ind. Borondo-28510 Campo Real</p>
+                        </div>
+                        <div class="w3-col w3-container w3-hide-small w3-hide-medium l4">
+                            <p class="w3-small w3-center ta-margin-0"><i class="far fa-clock"></i> Ln-Vn: 9AM-20PM, Sa: 9AM-14PM
+                            </p>
+                        </div>
+                        <div class="w3-col w3-container m4 l4">
+                            <p class="w3-small w3-center ta-margin-0"><i class="fas fa-phone-alt"></i> +34 555 559 658</p>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="w3-container w3-white w3-opacity">
+                    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                        href="javascript:void(0);" onclick="w3_open()" title="Toggle Navigation Menu">
+                        <i class="fas fa-align-justify"></i>
+                    </a>
+                    <a href="index.html#home" class="w3-bar-item" onclick="w3_close()" style="padding: 6px 0px;"><img src="./images/logo.png" alt="Valman Auto S.L."></a>
+                    <div class="w3-right">                        
+                        <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-border-right w3-hover-none ta-button"><i class="fas fa-car"></i> TALLER</a>
+                        <a href="index.html#services" class="w3-bar-item w3-button w3-hide-small w3-border-right w3-hover-none ta-button"><i class="fas fa-tools"></i> SERVICIOS</a>
+                        <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-none ta-button" style="padding-right: 0px;"><i class="fa fa-envelope"></i> CONTACTO</a>
+                    </div>                  
+                </div>
+            </div>
+
+            <!-- Navbar on small screens -->
+            <div class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large" style="display:none; right:0" id="mySidebar">    
+                <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-right-align"><i class="fas fa-car"></i> TALLER</a>
+                <a href="index.html#services" onclick="w3_close()" class="w3-bar-item w3-button w3-right-align"><i class="fas fa-tools"></i> SERVICIOS</a>
+                <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-right-align"><i class="fa fa-envelope"></i> CONTACTO</a>    
+            </div>
+        </div>
+
         <!-- Page Content -->
         <div id="main-two">
-            <div class="w3-container" style="padding:128px 16px" id="privacy">
+            <div class="w3-content w3-container" style="padding:128px 16px" id="privacy">
                 <h2 class="w3-center">Terminos y condiciones. Política de privacidad.</h2>
                 <div class="w3-row-padding w3-center" style="margin-top:64px">
                     <p class="db-text-ordinario w3-medium w3-justify">Bienvenido a nuestro sitio web. Si continúa navegando y utilizando este sitio web, acepta cumplir y 
@@ -59,5 +99,32 @@
                 </div>                
             </div>
         </div>
+
+        <div id="ta-btnToUp" title="Go to top">
+            <a href="#privacy" class="w3-button w3-blue-grey w3-opacity-min"><i class="fa fa-arrow-up"></i></a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-dark-grey w3-padding-64 w3-center">
+            <div class="w3-content">
+                <div class="w3-section">
+                    <p><span class="w3-border-bottom">Redes Sociales</span></p>
+                    <p class="w3-large">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square w3-btn"></i></a> 
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram w3-btn"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter w3-btn"></i></a>
+                        <a href="https://www.youtube.com/channel/" target="_blank"><i class="fab fa-youtube w3-btn"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=34691488817"><i class="fab fa-whatsapp w3-btn"></i></a>
+                    </p>
+                    <p class="w3-small">C/Hierro 29 - Pol. Ind. Borondo - 28510, Campo Real</p>
+                    <p class="w3-small"><i class="fas fa-phone-alt"></i> +34 555 559 658</p>
+                    <p class="w3-small"><i class="far fa-clock"></i> Ln-Vn: 9AM-20PM, Sa: 9AM-14PM</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/359d13261e.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/db-app-privacy.js"></script> 
     </body>
 </html>

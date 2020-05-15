@@ -33,25 +33,25 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../images/portada_center1.jpg');
+    background-image: url('../images/slider/portada_center1.jpg');
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("../images/tools.jpeg");
+    background-image: url("../images/secciones/tools.jpeg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("../images/vehicle-vintage.jpg");
+    background-image: url("../images/secciones/vehicle-vintage.jpg");
     min-height: 400px;
 }
 
 /* Quarter image (Contact) */
 .bgimg-4 {
-    background-image: url("../images/foco.jpeg");
+    background-image: url("../images/secciones/foco.jpeg");
     min-height: 400px;
 }
 
