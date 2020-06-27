@@ -31,28 +31,28 @@ html {
     background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* First image (Full height) */
 .bgimg-1 {
     background-image: url('../images/slider/portada_center1.jpg');
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image */
 .bgimg-2 {
-    background-image: url("../images/secciones/tools.jpeg");
-    min-height: 400px;
+    background-image: url("../images/secciones/key.jpg");
+    min-height: 300px;
 }
 
-/* Third image (Contact) */
+/* Third image */
 .bgimg-3 {
     background-image: url("../images/secciones/vehicle-vintage.jpg");
-    min-height: 400px;
+    min-height: 300px;
 }
 
-/* Quarter image (Contact) */
+/* Quarter image */
 .bgimg-4 {
     background-image: url("../images/secciones/foco.jpeg");
-    min-height: 400px;
+    min-height: 300px;
 }
 
 .w3-wide {
@@ -68,6 +68,7 @@ html {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
+/*
 @media only screen and (max-device-width: 1600px) {
 
     .bgimg-1,
@@ -78,6 +79,7 @@ html {
         min-height: 400px;
     }
 }
+*/
 
 
 
@@ -89,6 +91,10 @@ html {
 
 .ta-border-b-primary{
     border-bottom: 1px solid #e66a16;
+}
+
+.ta-ts-black{
+    text-shadow: 2px 2px #000000;
 }
 
 .ta-margin-0{
