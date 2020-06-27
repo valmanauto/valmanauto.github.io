@@ -138,6 +138,11 @@ html {
     padding-bottom:16px;
 }
 
+.ta-padding-lr-16{
+    padding-left:16px;
+    padding-right:16px;
+}
+
 
 .ta-offset-s0 {
     margin-left: 0%;
