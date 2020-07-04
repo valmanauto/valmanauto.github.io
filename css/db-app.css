@@ -24,7 +24,8 @@ html {
 .bgimg-1,
 .bgimg-2,
 .bgimg-3,
-.bgimg-4 {
+.bgimg-4,
+.bgimg-5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +34,7 @@ html {
 
 /* First image (Full height) */
 .bgimg-1 {
-    background-image: url('../images/slider/portada_center1.jpg');
+    background-image: url('../images/slider/taller-two.jpg');
     min-height: 100%;
 }
 
@@ -51,6 +52,12 @@ html {
 
 /* Quarter image */
 .bgimg-4 {
+    background-image: url("../images/secciones/motor-two.jpg");
+    min-height: 300px;
+}
+
+/* Five image */
+.bgimg-5 {
     background-image: url("../images/secciones/foco.jpeg");
     min-height: 300px;
 }
@@ -65,6 +72,10 @@ html {
 
 .w3-top{
     z-index:1001;
+}
+
+#modal01 {
+    z-index: 1002;;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -262,7 +273,6 @@ margin-left: 91.666667%;
         padding-top: 16px;
         padding-bottom: 64px;
     }
-
 }
 
 @media (min-width:601px) {
@@ -310,7 +320,6 @@ margin-left: 91.666667%;
 
 }
 
-
 @media (max-width: 993px) and (min-width: 601px) {  
     .w3-mobile {
         display: block;
@@ -320,7 +329,18 @@ margin-left: 91.666667%;
         padding-top: 16px;
         padding-bottom: 64px;
     }
+}
 
+@media (max-width: 715px){
+    .ta-hide-small {
+        display:none!important
+    }
+}
+
+@media (max-width: 993px) and (min-width: 716px) {  
+    .ta-hide-medium {
+        display:none!important
+    }
 }
 
 @media (min-width: 993px) {
@@ -364,6 +384,10 @@ margin-left: 91.666667%;
     }
     .ta-offset-l11 {
         margin-left: 91.666667%;
+    }
+
+    .ta-hide-large{
+        display:none!important
     }
 
 }

@@ -7,8 +7,6 @@
     <link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -23,36 +21,38 @@
                 <div class="w3-container w3-black">
                     <div class="w3-row">
                         <div class="w3-col w3-container m8 l4">
-                            <p class="w3-small w3-center ta-margin-0">C/Hierro 29-Pol. Ind. Borondo-28510 Campo Real</p>
+                            <p class="w3-small w3-center ta-margin-0">C/Hierro 29-Pol. Ind. Borondo - 28510,  Campo Real</p>
                         </div>
                         <div class="w3-col w3-container w3-hide-small w3-hide-medium l4">
-                            <p class="w3-small w3-center ta-margin-0"><i class="far fa-clock"></i> Ln-Vn: 9AM-20PM, Sa: 9AM-14PM
+                            <p class="w3-small w3-center ta-margin-0"><i class="far fa-clock"></i> Ln-Vn: 9AM-19PM, Sa: 9AM-14PM
                             </p>
                         </div>
                         <div class="w3-col w3-container m4 l4">
-                            <p class="w3-small w3-center ta-margin-0"><i class="fas fa-phone-alt"></i> +34 555 559 658</p>
+                            <p class="w3-small w3-center ta-margin-0"><i class="fas fa-phone-alt"></i> +34 691 488 817</p>
                         </div>
                     </div>                    
                 </div>
 
                 <div class="w3-container w3-white w3-opacity">
-                    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                    <a class="w3-bar-item w3-button w3-hover-black ta-hide-medium ta-hide-large w3-right"
                         href="javascript:void(0);" onclick="w3_open()" title="Toggle Navigation Menu">
                         <i class="fas fa-align-justify"></i>
                     </a>
                     <a href="#home" class="w3-bar-item" onclick="w3_close()" style="padding: 6px 0px;"><img src="./images/logo.png" alt="Valman Auto S.L."></a>
                     <div class="w3-right">                        
-                        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-border-right w3-hover-none ta-button"><i class="fas fa-car"></i> TALLER</a>
-                        <a href="#services" class="w3-bar-item w3-button w3-hide-small w3-border-right w3-hover-none ta-button"><i class="fas fa-tools"></i> SERVICIOS</a>
-                        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-none ta-button" style="padding-right: 0px;"><i class="fa fa-envelope"></i> CONTACTO</a>
+                        <a href="#about" class="w3-bar-item w3-button ta-hide-small w3-border-right w3-hover-none ta-button"><i class="fas fa-car"></i> TALLER</a>
+                        <a href="#services" class="w3-bar-item w3-button ta-hide-small w3-border-right w3-hover-none ta-button"><i class="fas fa-tools"></i> SERVICIOS</a>
+                        <a href="#portfolio" class="w3-bar-item w3-button ta-hide-small w3-border-right w3-hover-none ta-button"><i class="far fa-images"></i> TRABAJOS</a>
+                        <a href="#contact" class="w3-bar-item w3-button ta-hide-small w3-hover-none ta-button" style="padding-right: 0px;"><i class="fa fa-envelope"></i> CONTACTO</a>
                     </div>                  
                 </div>
             </div>
 
             <!-- Navbar on small screens -->
-            <div class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large" style="display:none; right:0" id="mySidebar">    
+            <div class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right ta-hide-medium ta-hide-large" style="display:none; right:0" id="mySidebar">    
                 <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-right-align"><i class="fas fa-car"></i> TALLER</a>
                 <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-right-align"><i class="fas fa-tools"></i> SERVICIOS</a>
+                <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-right-align"><i class="far fa-images"></i> TRABAJOS</a>                
                 <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-right-align"><i class="fa fa-envelope"></i> CONTACTO</a>    
             </div>
         </div>
@@ -62,23 +62,23 @@
             <div class="w3-display-middle ta-display-middle-full" style="white-space:nowrap;">    
                 <div class="w3-center w3-padding ta-deep-orange w3-wide w3-animate-opacity">
                     <div class="w3-large w3-hide-medium w3-hide-large">
-                        <p style="margin:2px;" class="w3-tiny w3-text-white">
-                            Valman Auto Garage
+                        <p class="w3-medium w3-text-white">
+                            Valman Auto
                         </p>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square w3-hover-opacity"></i></a> 
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
+                        <a href="https://www.facebook.com/Valman-Auto-SL-346178496189110/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a> 
+                        <a href="https://instagram.com/valmanauto?igshid=147aku70223z0" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+                        <a href="https://twitter.com/SlValman" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
                         <a href="https://www.youtube.com/channel/" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
                         <a href="https://api.whatsapp.com/send?phone=34691488817"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
                     </div> 
 
                     <div class="w3-xlarge w3-hide-small">
-                        <p style="margin: 2px;">
-                            <span class="w3-medium w3-text-white"><i>Valman Auto Garage</i></span>
+                        <p class="w3-medium w3-text-white">
+                            Valman Auto
                         </p>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square w3-hover-opacity"></i></a> 
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
+                        <a href="https://www.facebook.com/Valman-Auto-SL-346178496189110/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a> 
+                        <a href="https://instagram.com/valmanauto?igshid=147aku70223z0" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+                        <a href="https://twitter.com/SlValman" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
                         <a href="https://www.youtube.com/channel/" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
                         <a href="https://api.whatsapp.com/send?phone=34691488817"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
                     </div> 
@@ -91,8 +91,8 @@
         <div class="w3-content w3-container w3-padding-64" id="about">
             <div>
                 <h2 class="w3-center"><strong>TALLER</strong></h2>
-                <p class="w3-center"><em>'Ponemos pasión en lo que hacemos'</em></p>
-                <p class="w3-justify">El servicio de reparación <strong>VALMAN <span class="ta-color-primary">AUTO</span></strong> se inició en el 2003.</p>
+                <p class="w3-center w3-large"><em>'Ponemos pasión en lo que hacemos'</em></p>
+                <p class="w3-justify">El servicio de reparación <strong>VALMAN <span class="ta-color-primary">AUTO</span></strong> se inició en el 2006.</p>
                 <p class="w3-justify">Desde entonces, durante la última década, nuestras instalaciones de reparación y servicio de automóviles se convirtieron en una de las más 
                     populares en su campo en el área local. Si bien los primeros años fueron duros para la empresa, como generalmente lo son todas las cosas 
                     cuando se está iniciando, pronto ampliamos tanto nuestro equipo como la cantidad de operaciones de reparación ofrecidas. 
@@ -102,11 +102,6 @@
 
         <!-- Second Parallax Image -->
         <div class="bgimg-2 w3-display-container w3-opacity-min">
-            <!--
-            <div class="w3-display-middle">
-                <span class="w3-xxlarge w3-text-white w3-wide ta-ts-black">VALORES</span>
-            </div>
-            -->
         </div>
 
 
@@ -137,7 +132,7 @@
                         </div>                            
                         <footer>
                             <p class="ta-ventajas">Valoramos el servicio que brindamos. A nuestros clientes que regresan siempre pueden esperar algo de nuestra parte, 
-                                como descuento o un regalo.</p>
+                                como un descuento o un regalo.</p>
                         </footer>
                     </div>                       
                 </div>
@@ -159,8 +154,8 @@
         </div>
 
         <div class="w3-container w3-cell-row w3-content w3-padding-64">
-            <div class="w3-cell w3-mobile" style="width:50%">
-                <img src="./images/discount.jpeg" class="w3-round w3-image"
+            <div class="w3-cell w3-mobile w3-opacity-min" style="width:50%">
+                <img src="./images/servicios/store.jpg" class="w3-round w3-image"
                         alt="Discounts">
             </div>
             <div class="w3-cell w3-cell-middle w3-mobile ta-mobile" style="width:50%">               
@@ -175,11 +170,6 @@
 
         <!-- Third Parallax Image -->
         <div class="bgimg-3 w3-display-container w3-opacity-min">
-            <!--
-            <div class="w3-display-middle">
-                <span class="w3-xxlarge w3-text-white w3-wide ta-ts-black">SERVICIOS</span>
-            </div>
-            -->
         </div>
 
         <div class="w3-padding-64 w3-light-grey" id="services">
@@ -266,10 +256,98 @@
                         </footer>
                     </div>                       
                 </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">CHAPA Y <br> PINTURA</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/servicios/pintura.jpg" class="w3-round w3-image" alt="Chapa y pintura">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">SUSTITUCIÓN <br> DE LUNAS</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/servicios/cristal.jpg" class="w3-round w3-image" alt="Sustitución de lunas">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">PULIDO <br> DE FAROS</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/servicios/faro-two.jpg" class="w3-round w3-image" alt="Pulido de faros">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">REVISIÓN <br> PRE-ITV</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/servicios/revision.jpg" class="w3-round w3-image" alt="Revisión pre-itv">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">SERVICIO<br> ITV</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/servicios/itv.jpg" class="w3-round w3-image" alt="Servicio itv">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">TRAMITACIÓN BAJA<br> VEHICULO</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/servicios/baja.jpg" class="w3-round w3-image" alt="Tramitación baja vehiculo">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">RECOGIDA Y ENTREGA<br> EN DOMICILIO</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/servicios/recogidayentrega.jpg" class="w3-round w3-image" alt="Recogida y entrega en domicilio">
+                        </footer>
+                    </div>                       
+                </div>
+                <div class="w3-col w3-center w3-section ta-m6 ta-l3">
+                    <div class="w3-card-4 w3-container ta-padding-b-16">
+                        <header>
+                            <h5 class="ta-color-primary ta-border-b-primary ta-titulo-ventajas">COCHE<br> DE CORTESIA</h5>
+                        </header>                                                        
+                        <footer>
+                            <img src="./images/servicios/sustitucion.jpg" class="w3-round w3-image" alt="Coche de cortesia">
+                        </footer>
+                    </div>                       
+                </div>
+
             </div>
         </div>
 
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16 ta-padding-lr-16">              
+            <div class="w3-section w3-large">
+                <i class="far fa-handshake w3-xxxlarge"></i> <br>
+                Trabajamos con todas las compañias aseguradoras
+            </div>
+        </div>
 
+    <!--
         <div class="w3-row w3-center w3-dark-grey w3-padding-16 ta-padding-lr-16">
             <div class="w3-quarter w3-section">
                 <span class="w3-xlarge">14+</span><br>
@@ -288,131 +366,111 @@
                 Reuniones
             </div>
         </div>
+    -->
 
-
-<!--
-        <div>
-            <div class="w3-row">
-                <div class="w3-col m6 w3-center w3-padding-large">
-                    <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-                    <img src="./images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
-                        alt="Photo of Me" width="500" height="333">
-                </div>
-
-                <div class="w3-col m6 w3-hide-small w3-padding-large">
-                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
-            <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-            <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-            </div>
-        </div>
-
-        <div class="bgimg-2 w3-display-container w3-opacity-min">
-            <div class="w3-display-middle">
-                <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-            </div>
+        <!-- Quarter Parallax Image with Portfolio Text -->
+        <div class="bgimg-4 w3-display-container w3-opacity-min">
         </div>
 
         <div class="w3-content w3-container w3-padding-64" id="portfolio">
-            <h3 class="w3-center">MY WORK</h3>
-            <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make
-                    them bigger</em></p><br>
+            <h2 class="w3-center ta-color-7"><strong>TRABAJOS REALIZADOS</strong></h2>
 
-            <div class="w3-row-padding w3-center">
-                <div class="w3-col m3">
-                    <img src="./images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                        alt="The mist over the mountains">
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m4">
+                    <img src="./images/works/p1-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura preparación">
                 </div>
 
-                <div class="w3-col m3">
-                    <img src="./images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                        alt="Coffee beans">
+                <div class="w3-col m4">
+                    <img src="./images/works/p1-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura preparación">
                 </div>
 
-                <div class="w3-col m3">
-                    <img src="./images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                        alt="Bear closeup">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="./images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                        alt="Quiet ocean">
+                <div class="w3-col m4">
+                    <img src="./images/works/p1-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura resultado">
                 </div>
             </div>
 
             <div class="w3-row-padding w3-center w3-section">
-                <div class="w3-col m3">
-                    <img src="./images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                        alt="The mist">
+                <div class="w3-col m4">
+                    <img src="./images/works/p2-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Mecánica">
                 </div>
 
-                <div class="w3-col m3">
-                    <img src="./images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                        alt="My beloved typewriter">
+                <div class="w3-col m4">
+                    <img src="./images/works/p2-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Mecánica">
                 </div>
 
-                <div class="w3-col m3">
-                    <img src="./images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                        alt="Empty ghost train">
+                <div class="w3-col m4">
+                    <img src="./images/works/p2-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Mecánica">
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m6">
+                    <img src="./images/works/p3-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura antes">
                 </div>
 
-                <div class="w3-col m3">
-                    <img src="./images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                        alt="Sailing">
+                <div class="w3-col m6">
+                    <img src="./images/works/p3-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura resultado">
                 </div>
-                <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m6">
+                    <img src="./images/works/p4-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura preparación">
+                </div>
+
+                <div class="w3-col m6">
+                    <img src="./images/works/p4-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura resultado">
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m6">
+                    <img src="./images/works/p5-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura antes">
+                </div>
+
+                <div class="w3-col m6">
+                    <img src="./images/works/p5-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Pintura resultado">
+                </div>
             </div>
         </div>
 
         <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
-                    class="fa fa-remove"></i></span>
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fas fa-window-close"></i></span>
             <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
                 <img id="img01" class="w3-image">
                 <p id="caption" class="w3-opacity w3-large"></p>
             </div>
         </div>
--->
 
-        <!-- Third Parallax Image with Portfolio Text -->
-        <div class="bgimg-4 w3-display-container w3-opacity-min">
-            <!--
-            <div class="w3-display-middle">
-                <span class="w3-xxlarge w3-text-white w3-wide ta-ts-black">CONTACTO</span>
-            </div>
-            -->
+
+        <!-- Five Parallax Image with Portfolio Text -->
+        <div class="bgimg-5 w3-display-container w3-opacity-min">
         </div>
 
         <!-- Container (Contact Section) -->
         <div class="w3-content w3-container w3-padding-64" id="contact">
             <h2 class="w3-center"><strong>CONTACTO</strong></h2>
-            <p class="w3-center w3-large">¡No dudes!, ponte en contacto con nosotros</p>
+            <p class="w3-center w3-large"><em>¡No dudes!, ponte en contacto con nosotros</em></p>
 
             <div style="margin-top:48px">
                 <p><i class="fa fa-map-marker fa-fw w3-large w3-margin-right"></i> <b> Valman Auto Garage</b></p>
                 <p style="margin-left: 64px;">C/Hierro 29 - Pol. Ind. Borondo</p>
                 <p style="margin-left: 64px;">28510, Campo Real</p>
-                <p><i class="fas fa-clock w3-large w3-margin-right"></i> Ln-Vn: 9AM-20PM, Sa: 9AM-14PM</p>
-                <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> Telefóno : +34 555 559 658</p>
-                <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"></i> Email: <a href="mailto:loremipsum@gmail.com">loremipsum@gmail.com</a></p>
+                <p><i class="fas fa-clock w3-large w3-margin-right"></i> Ln-Vn: 9AM-19PM, Sa: 9AM-14PM</p>
+                <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> Telefóno : +34 691 488 817 - +34 918 765 498</p>
+                <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"></i> Email: <a href="mailto:valmanauto@outlook.es">valmanauto@outlook.es</a></p>
                 <br>
                 <!-- Image of location/map -->
                 <div id="mapid" class="w3-image" style="width:100%;margin-top:48px;height: 100vh;"></div>
@@ -429,15 +487,15 @@
                 <div class="w3-section">
                     <p><span class="w3-border-bottom">Redes Sociales</span></p>
                     <p class="w3-large">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square w3-btn"></i></a> 
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram w3-btn"></i></a>
-                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter w3-btn"></i></a>
+                        <a href="https://www.facebook.com/Valman-Auto-SL-346178496189110/" target="_blank"><i class="fab fa-facebook w3-btn"></i></a> 
+                        <a href="https://instagram.com/valmanauto?igshid=147aku70223z0" target="_blank"><i class="fab fa-instagram w3-btn"></i></a>
+                        <a href="https://twitter.com/SlValman" target="_blank"><i class="fab fa-twitter w3-btn"></i></a>
                         <a href="https://www.youtube.com/channel/" target="_blank"><i class="fab fa-youtube w3-btn"></i></a>
                         <a href="https://api.whatsapp.com/send?phone=34691488817"><i class="fab fa-whatsapp w3-btn"></i></a>
                     </p>
                     <p class="w3-small">C/Hierro 29 - Pol. Ind. Borondo - 28510, Campo Real</p>
-                    <p class="w3-small"><i class="fas fa-phone-alt"></i> +34 555 559 658</p>
-                    <p class="w3-small"><i class="far fa-clock"></i> Ln-Vn: 9AM-20PM, Sa: 9AM-14PM</p>
+                    <p class="w3-small"><i class="fas fa-phone-alt"></i> +34 691 488 817 - +34 918 765 498</p>
+                    <p class="w3-small"><i class="far fa-clock"></i> Ln-Vn: 9AM-19PM, Sa: 9AM-14PM</p>
                 </div>
             </div>
         </footer>
